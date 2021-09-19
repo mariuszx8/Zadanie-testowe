@@ -7,6 +7,10 @@
 header {
     padding: 35px 0 35px 55px;
 }
+.mobile-menu {
+    display: none;
+    color: #7d8081;
+}
 header .company-name {
     font-size: 25px;
     color: #d7794a;
@@ -83,8 +87,8 @@ hr {
 }
 p.image-description {
     font-size: 20px;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 3vw;
+    padding-left: 3vw;
 }
 .advantages-section {
     background-color: #1f3138;
@@ -206,6 +210,7 @@ input, textarea, select {
     z-index: -1;   
 }
 .about-img {
+    width: 50vw;
     height: initial;
 }
 .about-us {
@@ -223,17 +228,17 @@ h2 {
     font-size: 20px;
     margin-top: 40px;
     margin-bottom: 60px;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 .about-img-container {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 1.8vw;
+    padding-right: 1.8vw;
     padding-bottom: 40px;
 }
-.about-img img {
-    height: 140px;
-    width: initial;
+.about-img-container img {
+    width: 7vw;
+    height: initial;
 }
 .vertical-line {
     height: 20px;
@@ -245,11 +250,11 @@ h2 {
 }
 .img-label{
     text-transform: uppercase; 
-    font-size: 24px;
+    font-size: 22px;
     border-color: #000;
     border-width: 2px;
     border-style: solid;
-    padding: 15px;
+    padding: 12px 8px;
 }
 .gallery-text {
     padding-left: 12vw;
@@ -294,7 +299,7 @@ h2 {
     font-size: 20px;
 }
 .top-footer div {
-    padding: 5px 50px;
+    padding: 5px 3vw;
 }
 .top-footer div div:first-of-type {
     text-transform: uppercase;
@@ -315,4 +320,413 @@ h2 {
     font-size: 22px;
     width: 30px;
     height: 30px;
+}
+
+@media (max-width: 1440px) {
+    .title-section {
+        padding-bottom: 12vh;
+    }
+    .img-label {
+        padding: 10px 6px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .title-section {
+        padding-bottom: 10vh;
+    }
+    .contact-section {
+        padding-left: 16vw;
+        padding-right: 16vw;
+    }
+    .contact-form {
+        width: 60vw;
+    }
+    h2 {
+        font-size: 44px;
+    }
+    .about-us-description {
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+}
+
+@media (max-width: 1112px) {
+    header {
+        padding: 28px 0 28px 55px;
+    }
+    nav {
+        padding: 0;
+        justify-content: space-between;
+    }
+    .title-section {
+        padding-bottom: 8vh;
+    }
+    h1 {
+        font-size: 56px;
+    }
+    .leaders-section {
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+    .leaders-info {
+        font-size: 26px;
+    }
+    .image-title {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    p.image-description {
+        font-size: 18px;
+    }
+    .advantages-section {
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-top: 90px;
+        padding-bottom: 100px;
+    }
+    .contact-section {
+        padding-top: 200px;
+        padding-left: 13vw;
+        padding-right: 13vw;
+        padding-bottom: 150px;
+    }
+    .contact-form {
+        padding: 0;
+    }
+    input, textarea, select {
+        font-size: 20px;
+    }
+    .contact-form button {
+        padding: 14px 40px;
+        font-size: 20px;
+    }
+    .about-section {
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+    }
+    .about-us {
+        margin-left: 1vw;
+        padding-top: 55px;
+    }
+    .about-us-description {
+        font-size: 16px;
+    }
+    .about-img-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .img-label {
+        padding: 4px;
+        font-size: 16px;
+    }
+    .gallery-title {
+        margin-top: 160px;
+    }
+    .gallery-description {
+        font-size: 25px;
+        margin-bottom: 120px;
+    }
+    .gallery-nav {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .top-footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-size: 17px;
+    }
+    .top-footer div {
+        padding: 5px 2vw;
+    }
+    .bottom-footer {
+        font-size: 16px;
+        padding: 30px 80px;
+    }
+}
+@media (max-width: 834px) {
+    header {
+        padding: 22px 0 22px 20px;
+    }
+    header .company-name {
+        font-size: 22px;;
+    }
+    nav {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    div.menu-element {
+        padding: 18px 1vw;
+        font-size: 20px;
+    }
+    .title-section {
+        height: 80vh;;
+    }
+    .leaders-section {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 210px;
+    }
+    h1 {
+        font-size: 54px;
+    }
+    .leaders-info {
+        font-size: 24px;
+    }
+    .leaders-gallery {
+        margin-top: 90px;
+        flex-direction: column!important;
+    }
+    .gallery-element img {
+        width: 40vw;
+    }
+    .image-title {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    p.image-description {
+        margin-bottom: 50px;
+        padding-right: 6vw;
+        padding-left: 6vw;
+    }
+    .advantages-section {
+        flex-direction: column!important;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .advantage {
+        margin: 30px 0;
+    }
+    .contact-section {
+        padding-top: 160px;
+        padding-left: 12vw;
+        padding-right: 12vw;
+    }
+    .about-section {
+        flex-direction: column;
+        padding-top: 150px;
+        padding-bottom: 240px;
+    }
+    .about-img {
+        width: 70vw;
+        margin-bottom: 80px;
+    }
+    .about-us {
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+    .about-us-description {
+        font-size: 17px;
+    }
+    .about-img-container img {
+        width: 10vw;
+        height: initial;
+    }
+    .img-label {
+        padding: 6px;
+    }
+    .gallery-title {
+        margin-top: 120px;
+        margin-bottom: 50px;
+    }
+    .gallery-description {
+        font-size: 22px;
+        margin-bottom: 110px;
+    }
+    .gallery-section > div:nth-child(2){
+        flex-direction: column!important;
+        align-items: center;
+    }
+    .gallery-section img {
+        height: 80%;
+        width: initial;
+    }
+    .gallery-section > div:nth-child(2) > img:not(:nth-child(1)) {
+        display: none;
+    }
+    .gallery-nav {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .top-footer {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .top-footer div {
+        padding: 5px 1vw;
+    }
+    .bottom-footer {
+        padding: 20px 60px;
+    }
+}
+@media (max-width: 736px) {
+    header {
+        justify-content: space-between;
+        padding: 22px 20px;
+    }
+    .mobile-menu {
+        display: block;
+        font-size: 30px;
+    }
+    nav.flex-row {
+        flex-direction: column!important;
+        align-items: center;
+        display: none!important;
+    }
+    div.menu-element {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .title-section {
+        padding-right: 5vw;
+        padding-bottom: 6vh;
+    }
+    .leaders-info {
+        font-size: 22px;
+    }
+    .gallery-element img {
+        width: 50vw;
+    }
+    .contact-section {
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+    .contact-detail {
+        font-size: 23px;
+    }
+    .contact-form {
+        width: 70vw;
+    }
+    .about-img {
+        width: 80vw;
+    }
+    .top-footer {
+        font-size: 16px;
+    }
+    .bottom-footer {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 568px) {
+    .title-section {
+        padding-right: 3vw;
+        padding-bottom: 5vh;
+    }
+    .title-welcome {
+        font-size: 3em;
+    }
+    .title-company-name {
+        font-size: 1.6em;
+    }
+    h1 {
+        font-size: 45px;
+    }
+    .leaders-info,
+    .gallery-description {
+        font-size: 20px;
+    }
+    .about-img-container {
+        flex-direction: column!important;
+    }
+    .about-img-container>div{
+        padding: 0 20%;
+        margin-bottom: 40px;
+    }
+    .about-img-container img {
+        width: 20vw;
+    }
+    .img-label {
+        padding: 4px;
+    }
+    .top-footer {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    .top-footer div {
+        padding: 5px 0;
+        text-align: center;
+    }
+    .bottom-footer {
+        padding: 10px 1vw;
+        font-size: 15px;
+        flex-direction: column!important;
+    }
+    .bottom-footer div {
+        padding: 10px 0;
+    }
+}
+@media (max-width: 420px) {
+    .title-section {
+        padding-right: 0;
+        padding-bottom: 3vh;
+        align-items: center!important;
+    }
+    .leaders-section {
+        padding: 180px 3vw;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .gallery-element img {
+        width: 60vw;
+    }
+    .contact-section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .contact-detail {
+        font-size: 20px;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .contact-form {
+        width: 80vw;
+    }
+    .about-img {
+        width: 85vw;
+    }
+    .gallery-section img {
+        height: initial;
+        width: 100%;
+    }
+    .top-footer {
+        flex-direction: column!important;
+    }
+    .bottom-footer .copyright{
+        text-align: center;
+    }
+}
+@media (max-width: 375px) {
+    header .company-name {
+        font-size: 1.2em;
+    }
+    .title-welcome {
+        font-size: 2.6em;
+    }
+    .title-company-name {
+        font-size: 1.4em;
+    }
+    .leaders-info {
+        padding: 0 3vw;
+        font-size: 18px;
+    }
+    .form-row {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    #name, #category, #phone, #city {
+        width: 100%;
+    }
+    input, textarea, select {
+        margin-bottom: 40px;
+    }
 }
